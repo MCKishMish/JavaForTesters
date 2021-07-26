@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-26T08:40:05" hostname="PASHOK-ПК" time="6.225">
+  <properties/>
+  <testcase name="testGroupCreationTests" classname="ru.stqa.pft.addressbook.GroupCreationTests" time="6.225"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1627288785051	geckodriver	INFO	Listening on 127.0.0.1:36939
+1627288786324	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "0" "-foreground" "-no-remote" "-profile" "C:\\Users\\Pashok\\AppData\\Local\\Temp\\rust_mozprofilebxHXZH"
+1627288790085	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Pashok\\AppData\\Local\\Temp\\rust_mozprofilebxHXZH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51893/devtools/browser/a6f82f4c-571d-4095-8dfe-8dfbf553adab
+1627288803555	Marionette	INFO	Listening on port 10689
+1627288804791	Marionette	WARN	TLS certificate errors will be ignored for this session
+июл 26, 2021 11:40:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
