@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-08T08:55:47" hostname="PASHOK-ПК" time="3.409">
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-14T09:50:32" hostname="PASHOK-ПК" time="7.556">
   <properties/>
-  <testcase name="testContactCreation" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="3.409"/>
+  <testcase name="testContactCreation" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="7.556"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1628412935622	geckodriver	INFO	Listening on 127.0.0.1:36991
-1628412936661	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "0" "-foreground" "-no-remote" "-profile" "C:\\Users\\Pashok\\AppData\\Local\\Temp\\rust_mozprofileQnPeVK"
-1628412938119	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Pashok\\AppData\\Local\\Temp\\rust_mozprofileQnPeVK\\search.json.mozlz4", (void 0)))
-console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
-console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
-DevTools listening on ws://localhost:2649/devtools/browser/63cbe8a9-0805-4b43-8122-6f2af6d1dee1
-1628412946383	Marionette	INFO	Listening on port 2618
-1628412946711	Marionette	WARN	TLS certificate errors will be ignored for this session
-авг 08, 2021 11:55:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 14188
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1628934628.468][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+авг 14, 2021 12:50:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1628412951341	Marionette	INFO	Stopped listening on port 2618
-JavaScript error: resource://devtools/client/jsonview/Sniffer.jsm, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
-!!! error running onStopped callback: TypeError: callback is not a function
-JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
-1628412953110	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
-unwatchForTabs()@TargetList.jsm:70
-unwatchForTargets()@TargetList.jsm:37
-destructor()@TargetList.jsm:109
-close()@RemoteAgent.jsm:129
+авг 14, 2021 12:50:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 92, so returning the closest version found: 91
+авг 14, 2021 12:50:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 92 of 91
 ]]></system-err>
 </testsuite>
