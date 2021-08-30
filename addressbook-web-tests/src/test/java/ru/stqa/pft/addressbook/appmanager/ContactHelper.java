@@ -91,10 +91,12 @@ public class ContactHelper extends HelperBase {
 
   public List<ContactData> getContactList() {
     List<ContactData> contacts = new ArrayList<ContactData>();
-    List <WebElement> elements = wd.findElements(By.className("entry"));
+    List <WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
-      String lname = element.getAttribute("title");
-      String fname = element.getAttribute("title");
+      List<WebElement> rows = element.findElements(By.tagName("td"));
+      String lname = rows.get(1).getText();
+      String fname = rows.get(2).getText();
+      System.out.println(lname + " " + fname);
       ContactData contact = new ContactData(lname, fname, null, null, null, null);
       contacts.add(contact);
     }
