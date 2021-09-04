@@ -18,8 +18,8 @@ public class ContactModificationTests extends TestBase {
       app.getContactHelper().createContact(new ContactData("FirstName", "LastName", "5 S.Main Street, Englishtown, NJ 07726", "+1 (202) 986-1805", "e-mail1@mail.ru", "test1"));
     }
     List<ContactData> before= app.getContactHelper().getContactList();
-    app.getContactHelper().selectContact(before.size()-1);
-    app.getContactHelper().initContactModification();
+    //app.getContactHelper().selectContact(before.size()-1);
+    app.getContactHelper().initContactModification(before.size()-1);
     ContactData contact = new ContactData(before.get(before.size()-1).getId(),"FirstName1", "LastName1", "5 S.Main Street, Englishtown, NJ 077261", "+1 (202) 986-1805!", "e-mail1@mail.ru1", null);
     app.getContactHelper().fillContactForm(contact,false);
     //app.getContactHelper().modifyContactForm();
