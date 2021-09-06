@@ -23,6 +23,4 @@ public class GroupCreationTests extends TestBase {
     before.add(group);
     Assert.assertEquals(before,after);
   }
-
-
 }
