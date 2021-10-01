@@ -7,7 +7,7 @@ public class ContactPhoneTests extends TestBase {
   @Test
   public void testContactPhones() {
     app.goTo().homePage();
-    
+
   }
 
 
