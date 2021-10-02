@@ -8,6 +8,7 @@ public class ContactData {
   private String lastname;
   private String address;
   private String mobile;
+  private String allPhones;
   private String homePhone;
   private String mobilePhone;
   private String workPhone;
@@ -33,6 +34,22 @@ public class ContactData {
   public String getEmail() { return email; }
 
   public String getGroup() { return group;  }
+
+  public String getHomePhone() {
+    return homePhone;
+  }
+
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
+  }
+
+  public String getAllPhones() {
+    return allPhones;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -82,7 +99,8 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withworkPhone(String workPhone) {
+
+  public ContactData withWorkPhone(String workPhone) {
     this.workPhone = workPhone;
     return this;
   }
@@ -94,6 +112,10 @@ public class ContactData {
 
   public ContactData withGroup(String group) {
     this.group = group;
+    return this;
+  }
+  public ContactData withAllPhones(String allPhones) {
+    this.allPhones = allPhones;
     return this;
   }
 

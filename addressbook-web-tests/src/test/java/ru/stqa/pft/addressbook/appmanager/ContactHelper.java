@@ -149,9 +149,11 @@ public class ContactHelper extends HelperBase {
       List<WebElement> rows = element.findElements(By.tagName("td"));
       String lname = rows.get(1).getText();
       String fname = rows.get(2).getText();
+      String allPhones = rows.get(5).getText();
       //System.out.println(lname + " " + fname);
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
-      contactCashe.add(new ContactData().withId(id).withFirstname(fname).withLastname(lname));
+      contactCashe.add(new ContactData().withId(id).withFirstname(fname).withLastname(lname)
+              .withAllPhones(allPhones));
     }
     return new Contacts(contactCashe);
   }
@@ -166,7 +168,7 @@ public class ContactHelper extends HelperBase {
     wd.navigate().back();
     return new ContactData().withId(contact.getId()).withFirstname(firstname)
             .withLastname(lastname).withHomePhone(home).withMobilePhone(mobile)
-            .withworkPhone(work);
+            .withWorkPhone(work);
   }
 }
 
