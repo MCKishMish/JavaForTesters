@@ -18,8 +18,8 @@ public class ContactPhoneTests extends TestBase {
   public void testContactPhones() {
     app.goTo().homePage();
     ContactData contact = app.contact().all().iterator().next();
-    ContactData contactInfoFormEdit = app.contact().infoFormEditForm(contact);
-    
+    ContactData contactInfoFormEdit = app.contact().phonesFromEditForm(contact);
+
     assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFormEdit)));
   }
 
