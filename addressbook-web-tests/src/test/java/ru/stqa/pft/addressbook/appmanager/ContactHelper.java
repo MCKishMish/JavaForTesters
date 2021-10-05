@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -196,6 +197,25 @@ public class ContactHelper extends HelperBase {
     wd.navigate().back();
     return new ContactData().withId(contact.getId()).withFirstname(firstname)
             .withLastname(lastname).withAddress(address);
+  }
+
+  public ContactData infoFromDetailsFrom(ContactData contact) {  //Получаем информацию на форме Детали контакта
+    JavascriptExecutor js = (JavascriptExecutor) wd;
+    detailsContactById(contact.getId());
+    String[] fs = wd.findElement(By.xpath("//*[@id=\"content\"]/b")).getText().split("\\s");
+    String email = wd.findElement(By.xpath("//*[@id=\"content\"]/a")).getText();
+    String address = (String) js.executeScript("var value = document.evaluate(\"//*[@id='content']/br[1]/following::text()[1]\",document, null, XPathResult.STRING_TYPE, null ); return value.stringValue;");
+    String home = (String) js.executeScript("var value = document.evaluate(\"//*[@id='content']/br[3]/following::text()[1]\",document, null, XPathResult.STRING_TYPE, null ); return value.stringValue;");
+    String mobile = (String) js.executeScript("var value = document.evaluate(\"//*[@id='content']/br[3]/following::text()[2]\",document, null, XPathResult.STRING_TYPE, null ); return value.stringValue;");
+    String work = (String) js.executeScript("var value = document.evaluate(\"//*[@id='content']/br[3]/following::text()[3]\",document, null, XPathResult.STRING_TYPE, null ); return value.stringValue;");
+    wd.navigate().back();
+    return new ContactData().withId(contact.getId()).withFirstname(fs[0]).withLastname(fs[1])
+            .withAddress(address).withEmail1(email).withHomePhone(home.substring(3))
+            .withMobilePhone(mobile.substring(3)).withWorkPhone(work.substring(3));
+  }
+
+  private void detailsContactById(int id) {
+    wd.findElement(By.xpath("//input[@id='" + id + "']/../../td[7]/a/img")).click();
   }
 }
 
