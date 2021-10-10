@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-10T09:35:10" hostname="PASHOK-ПК" time="27.624">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-10T09:45:13" hostname="PASHOK-ПК" time="23.167">
   <properties/>
-  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="18.351"/>
-  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.163"/>
-  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="7.094"/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="13.601"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.23"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="7.332"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
